@@ -16,7 +16,12 @@
 // addItems.innerHTML = '<b>Add Items</b>'
 // addItems.style.color = 'red';
 var Xtitle=document.getElementsByClassName('list-group-item');
+console.log(Xtitle)
 Xtitle[2].style.backgroundColor='green';
 for (let i=0;i<Xtitle.length;i++){
     Xtitle[i].style.fontWeight='bold';
+}
+var Ytitle=document.getElementsByTagName('li');
+for(let i=0; i<Ytitle.length;i++){
+    Ytitle[i].style.backgroundColor='red';
 }
