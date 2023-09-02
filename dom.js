@@ -15,13 +15,17 @@
 // var addItems = Xtitle[0];
 // addItems.innerHTML = '<b>Add Items</b>'
 // addItems.style.color = 'red';
-var Xtitle=document.getElementsByClassName('list-group-item');
-console.log(Xtitle)
-Xtitle[2].style.backgroundColor='green';
-for (let i=0;i<Xtitle.length;i++){
-    Xtitle[i].style.fontWeight='bold';
-}
-var Ytitle=document.getElementsByTagName('li');
-for(let i=0; i<Ytitle.length;i++){
-    Ytitle[i].style.backgroundColor='red';
+// 
+
+var Ztitle=document.querySelector('li:nth-child(2)');
+Ztitle.style.backgroundColor='green';
+var Ytitle=document.querySelector('li:nth-child(3)');
+Ytitle.style.display='None';
+
+var Atitle=document.querySelectorAll('li');
+Atitle[1].style.color='green';
+
+var odd=document.querySelectorAll('li:nth-child(odd)');
+for (let i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor='green';
 }
